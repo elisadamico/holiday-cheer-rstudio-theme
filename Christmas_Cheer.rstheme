@@ -1,0 +1,802 @@
+/* rs-theme-name: Christmas Cheer */
+/* rs-theme-is-dark: TRUE */
+
+/* Christmas Cheer - A festive dark theme for the entire RStudio interface */
+
+/* ============================================================================
+   GLOBAL INTERFACE STYLING
+   ============================================================================ */
+
+/* Base background colors */
+.rstudio-themes-flat,
+.rstudio-themes-flat body,
+.rstudio-themes-flat .gwt-TabLayoutPanel,
+.rstudio-themes-flat .gwt-TabLayoutPanelContent,
+.rstudio-themes-flat .windowframe,
+div.rstudio-themes-flat {
+  background-color: #1a1512 !important;
+  color: #f5f5dc !important;
+}
+
+/* All dialog boxes */
+.gwt-DialogBox,
+.gwt-PopupPanel,
+.themedPopupPanel,
+.rstudio-themes-flat .gwt-DialogBox,
+.rstudio-themes-flat .gwt-PopupPanel {
+  background-color: #1a1512 !important;
+  border: 1px solid #8b2635 !important;
+  color: #f5f5dc !important;
+}
+
+.gwt-DialogBox .Caption,
+.rstudio-themes-flat .gwt-DialogBox .Caption {
+  background-color: #8b2635 !important;
+  color: #ffd700 !important;
+  border-bottom: 1px solid #dc143c !important;
+}
+
+/* All buttons */
+button,
+.gwt-Button,
+.rstudio-themes-flat button,
+.rstudio-themes-flat .gwt-Button,
+.rstudio-themes-flat .themedButton,
+.dialogBottomPanel button {
+  background-color: #2a1f1a !important;
+  color: #f5f5dc !important;
+  border: 1px solid #8b2635 !important;
+}
+
+button:hover,
+.gwt-Button:hover,
+.rstudio-themes-flat button:hover,
+.rstudio-themes-flat .gwt-Button:hover {
+  background-color: #8b2635 !important;
+  color: #ffd700 !important;
+  border-color: #dc143c !important;
+}
+
+/* Primary/default buttons */
+button[type="submit"],
+.gwt-Button.buttonLeftCenter,
+.rstudio-themes-flat button[type="submit"] {
+  background-color: #8b2635 !important;
+  color: #ffd700 !important;
+}
+
+/* Input fields and textboxes */
+input,
+textarea,
+select,
+.gwt-TextBox,
+.gwt-TextArea,
+.gwt-ListBox,
+.rstudio-themes-flat input,
+.rstudio-themes-flat textarea,
+.rstudio-themes-flat select,
+.rstudio-themes-flat .gwt-TextBox,
+.rstudio-themes-flat .gwt-TextArea,
+.rstudio-themes-flat .gwt-ListBox,
+.gwt-SuggestBox input {
+  background-color: #0f0d0a !important;
+  color: #f5f5dc !important;
+  border: 1px solid #8b2635 !important;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: #dc143c !important;
+  outline: none !important;
+}
+
+/* Checkboxes and radio buttons */
+.gwt-CheckBox,
+.gwt-RadioButton,
+.rstudio-themes-flat .gwt-CheckBox,
+.rstudio-themes-flat .gwt-RadioButton {
+  color: #f5f5dc !important;
+}
+
+/* Labels */
+label,
+.gwt-Label,
+.rstudio-themes-flat label,
+.rstudio-themes-flat .gwt-Label {
+  color: #f5f5dc !important;
+}
+
+/* Toolbars */
+.gwt-MenuBar,
+.rstheme_toolbarWrapper,
+.rstudio-themes-flat .gwt-MenuBar {
+  background-color: #0f0d0a !important;
+  color: #f5f5dc !important;
+  border-bottom: 1px solid #8b2635 !important;
+}
+
+.gwt-MenuItem,
+.rstudio-themes-flat .gwt-MenuItem {
+  color: #f5f5dc !important;
+}
+
+.gwt-MenuItem-selected,
+.gwt-MenuItem:hover,
+.rstudio-themes-flat .gwt-MenuItem-selected {
+  background-color: #8b2635 !important;
+  color: #ffd700 !important;
+}
+
+/* Tabs */
+.gwt-TabLayoutPanelTab,
+.rstudio-themes-flat .gwt-TabLayoutPanelTab {
+  background-color: #1a3a1a !important;
+  color: #f5f5dc !important;
+  border-top: 2px solid transparent !important;
+  border-left: 1px solid #2a1f1a !important;
+  border-right: 1px solid #2a1f1a !important;
+  border-bottom: none !important;
+}
+
+.gwt-TabLayoutPanelTab-selected,
+.rstudio-themes-flat .gwt-TabLayoutPanelTab-selected {
+  background-color: #1a1512 !important;
+  color: #90ee90 !important;
+  border-top: 2px solid #dc143c !important;
+  border-left: 1px solid #2a1f1a !important;
+  border-right: 1px solid #2a1f1a !important;
+}
+
+.gwt-TabLayoutPanelTab:hover {
+  background-color: #2d5a2d !important;
+  color: #90ee90 !important;
+}
+
+/* Close buttons on tabs */
+.gwt-TabLayoutPanelTab .closeTabButton,
+.rstudio-themes-flat .closeTabButton,
+.gwt-Image[title="Close"],
+button.closeTabButton {
+  filter: invert(70%) sepia(50%) saturate(800%) hue-rotate(100deg) brightness(100%) !important;
+  opacity: 0.8 !important;
+}
+
+.gwt-TabLayoutPanelTab .closeTabButton:hover,
+.rstudio-themes-flat .closeTabButton:hover {
+  filter: brightness(0) saturate(100%) invert(23%) sepia(89%) saturate(2384%) hue-rotate(344deg) brightness(89%) contrast(92%) !important;
+  opacity: 1 !important;
+}
+
+/* Additional aggressive close button targeting */
+.gwt-TabLayoutPanelTab img,
+.gwt-TabLayoutPanelTab button img,
+.rstudio-themes-flat .gwt-TabLayoutPanelTab img,
+img[src*="close"],
+img[title*="lose"],
+.rstheme_tabCloseButton,
+div[title="Close"],
+.gwt-Image[aria-label*="Close"] {
+  filter: invert(70%) sepia(50%) saturate(800%) hue-rotate(100deg) brightness(100%) !important;
+  opacity: 0.9 !important;
+  background-color: transparent !important;
+}
+
+.gwt-TabLayoutPanelTab img:hover,
+img[src*="close"]:hover,
+.rstheme_tabCloseButton:hover {
+  filter: brightness(0) saturate(100%) invert(23%) sepia(89%) saturate(2384%) hue-rotate(344deg) brightness(89%) contrast(92%) !important;
+  opacity: 1 !important;
+  cursor: pointer !important;
+}
+
+/* If images don't work, try styling the container */
+.gwt-TabLayoutPanelTab > div:last-child,
+.gwt-TabLayoutPanelTab .gwt-Image:last-child {
+  filter: brightness(2) saturate(1) !important;
+  opacity: 1 !important;
+}
+
+/* Catch-all for all tab images to make them visible */
+.gwt-TabLayoutPanelTab * {
+  opacity: 1 !important;
+}
+
+.gwt-TabLayoutPanelTab img,
+.gwt-TabLayoutPanelTab .gwt-Image {
+  display: inline-block !important;
+  visibility: visible !important;
+  filter: invert(70%) sepia(50%) saturate(800%) hue-rotate(100deg) brightness(100%) !important;
+}
+
+.gwt-TabLayoutPanelTab img:hover,
+.gwt-TabLayoutPanelTab .gwt-Image:hover {
+  filter: invert(30%) sepia(90%) saturate(2000%) hue-rotate(340deg) brightness(90%) !important;
+}
+
+/* Sidebar panels */
+.rstheme_minimizedWindowObject,
+.rstudio-themes-flat .rstheme_minimizedWindowObject {
+  background-color: #0f0d0a !important;
+  border: 1px solid #8b2635 !important;
+}
+
+/* Lists and trees */
+.gwt-Tree,
+.gwt-TreeItem,
+.rstudio-themes-flat .gwt-Tree,
+.rstudio-themes-flat .gwt-TreeItem {
+  color: #f5f5dc !important;
+}
+
+.gwt-TreeItem-selected,
+.rstudio-themes-flat .gwt-TreeItem-selected {
+  background-color: #8b2635 !important;
+  color: #ffd700 !important;
+}
+
+/* Tables */
+table,
+.dataTable,
+.rstudio-themes-flat table {
+  background-color: #1a1512 !important;
+  color: #f5f5dc !important;
+}
+
+th,
+.rstudio-themes-flat th {
+  background-color: #0f0d0a !important;
+  color: #d4af37 !important;
+  border-bottom: 2px solid #8b2635 !important;
+}
+
+tr:hover {
+  background-color: #2a1f1a !important;
+}
+
+/* Scrollbars */
+::-webkit-scrollbar {
+  width: 12px !important;
+  height: 12px !important;
+}
+
+::-webkit-scrollbar-track {
+  background: #0f0d0a !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #8b2635 !important;
+  border-radius: 6px !important;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #dc143c !important;
+}
+
+/* Console */
+.rstudio-themes-flat .console-output {
+  background-color: #1a1512 !important;
+  color: #f5f5dc !important;
+}
+
+.rstudio-themes-flat .console-input {
+  color: #90ee90 !important;
+}
+
+.rstudio-themes-flat .console-error {
+  color: #ff6b6b !important;
+}
+
+/* Status bar */
+.rstheme_statusBar,
+.rstudio-themes-flat .rstheme_statusBar {
+  background-color: #0f0d0a !important;
+  color: #d4af37 !important;
+  border-top: 1px solid #8b2635 !important;
+}
+
+/* Splitters */
+.gwt-SplitLayoutPanel-HDragger,
+.gwt-SplitLayoutPanel-VDragger {
+  background-color: #2a1f1a !important;
+}
+
+/* Remove all white/light borders */
+.rstudio-themes-flat *,
+.rstudio-themes-flat div,
+.rstudio-themes-flat table,
+.rstudio-themes-flat tr,
+.rstudio-themes-flat td,
+.rstudio-themes-flat th {
+  border-color: #2a1f1a !important;
+}
+
+/* Main interface borders */
+.rstudio-themes-flat .gwt-TabLayoutPanel,
+.rstudio-themes-flat .gwt-TabLayoutPanelContent,
+.rstudio-themes-flat .windowframe {
+  border: 1px solid #2a1f1a !important;
+}
+
+/* Panel borders */
+.rstheme_center,
+.rstudio-themes-flat .rstheme_center {
+  border-left: 1px solid #2a1f1a !important;
+  border-right: 1px solid #2a1f1a !important;
+}
+
+/* Toolbar borders */
+.rstheme_toolbarWrapper {
+  border-bottom: 1px solid #2a1f1a !important;
+}
+
+/* File browser and pane borders */
+.rstudio-themes-flat .gwt-Tree,
+.rstudio-themes-flat .filesPane,
+.rstudio-themes-flat table.dataTable {
+  border: 1px solid #2a1f1a !important;
+}
+
+/* Remove white outlines from focusable elements */
+.rstudio-themes-flat *:focus {
+  outline: none !important;
+  border-color: #8b2635 !important;
+}
+
+/* Pane dividers - make subtle */
+.rstudio-themes-flat .gwt-SplitLayoutPanel {
+  border: none !important;
+}
+
+/* Code completion popup */
+.ace_autocomplete,
+.rstudio-themes-flat .ace_autocomplete {
+  background-color: #1a1512 !important;
+  border: 1px solid #8b2635 !important;
+}
+
+.ace_autocomplete .ace_line,
+.ace_autocomplete .ace_line-hover {
+  color: #f5f5dc !important;
+}
+
+.ace_autocomplete .ace_active-line {
+  background-color: #8b2635 !important;
+}
+
+/* Find/Replace dialog */
+.find-replace-bar {
+  background-color: #1a1512 !important;
+  border: 1px solid #8b2635 !important;
+}
+
+/* Environment pane and data viewers */
+.rstudio-themes-flat .dataTable,
+.rstudio-themes-flat .dataTables_wrapper,
+.rstudio-themes-flat .dataTable tbody,
+.rstudio-themes-flat .dataTable thead,
+div[role="grid"],
+.gwt-ScrollTable,
+.environmentPanel,
+.rstudio-themes-flat .environmentPanel {
+  background-color: #1a1512 !important;
+  color: #f5f5dc !important;
+}
+
+/* Environment dropdown and selectors */
+.rstudio-themes-flat .environmentPanel select,
+.rstudio-themes-flat .environmentPanel .gwt-ListBox,
+select[aria-label*="Environment"],
+.gwt-ListBox[aria-label*="Environment"] {
+  background-color: #0f0d0a !important;
+  color: #90ee90 !important;
+  border: 1px solid #2a1f1a !important;
+}
+
+/* All dropdowns in the interface */
+.rstudio-themes-flat select,
+.rstudio-themes-flat .gwt-ListBox,
+select,
+.gwt-ListBox {
+  background-color: #0f0d0a !important;
+  color: #f5f5dc !important;
+  border: 1px solid #2a1f1a !important;
+}
+
+/* Dropdown options */
+.rstudio-themes-flat select option,
+.rstudio-themes-flat option {
+  background-color: #0f0d0a !important;
+  color: #f5f5dc !important;
+}
+
+/* Panel headers and toolbars */
+.rstudio-themes-flat .gwt-HTML,
+.rstudio-themes-flat .gwt-InlineLabel {
+  background-color: transparent !important;
+  color: #f5f5dc !important;
+}
+
+/* Environment toolbar area */
+.rstudio-themes-flat .rstheme_toolbarWrapper,
+.environmentPanel .rstheme_toolbarWrapper,
+.rstudio-themes-flat .environmentPanel .rstheme_toolbarWrapper {
+  background-color: #0f0d0a !important;
+  border: none !important;
+}
+
+/* Fix any white container elements */
+.rstudio-themes-flat .gwt-HorizontalPanel,
+.rstudio-themes-flat .gwt-VerticalPanel {
+  background-color: transparent !important;
+}
+
+/* Environment panel cells */
+.rstudio-themes-flat td,
+.rstudio-themes-flat .dataTable td {
+  background-color: #1a1512 !important;
+  color: #f5f5dc !important;
+  border-color: #2a1f1a !important;
+}
+
+/* Highlighted rows in environment/data tables */
+.rstudio-themes-flat tr.selected,
+.rstudio-themes-flat .dataTable tr.selected,
+.gwt-ScrollTable tr:hover {
+  background-color: #2a1f1a !important;
+}
+
+/* Empty message in environment */
+.emptyEnvironmentMessage,
+.rstudio-themes-flat .emptyEnvironmentMessage {
+  background-color: #1a1512 !important;
+  color: #8fbc8f !important;
+}
+
+/* All white panels/backgrounds */
+.rstudio-themes-flat .gwt-Frame,
+.rstudio-themes-flat iframe,
+.rstudio-themes-flat .gwt-HTML {
+  background-color: #1a1512 !important;
+  color: #f5f5dc !important;
+}
+
+/* Help panel and viewer */
+.rstudio-themes-flat .helpPane,
+.rstudio-themes-flat .viewerPane {
+  background-color: #1a1512 !important;
+  color: #f5f5dc !important;
+}
+
+/* Package manager */
+.rstudio-themes-flat .packageManagerPanel {
+  background-color: #1a1512 !important;
+}
+
+/* Connection pane */
+.rstudio-themes-flat .connectionExplorerPanel {
+  background-color: #1a1512 !important;
+}
+
+/* Grid layouts */
+.rstudio-themes-flat .gwt-Grid,
+.rstudio-themes-flat .gwt-FlexTable {
+  background-color: #1a1512 !important;
+  color: #f5f5dc !important;
+}
+
+/* Specific panel backgrounds */
+.windowframe,
+.rstudio-themes-flat .windowframe {
+  background-color: #1a1512 !important;
+}
+
+/* History pane */
+.rstudio-themes-flat .historyPanel {
+  background-color: #1a1512 !important;
+}
+
+/* Files pane */
+.rstudio-themes-flat .filesPane {
+  background-color: #1a1512 !important;
+}
+
+/* Plot viewer */
+.rstudio-themes-flat .plotsPanel {
+  background-color: #1a1512 !important;
+}
+
+/* Any remaining white spaces */
+.rstudio-themes-flat div,
+.rstudio-themes-flat span {
+  background-color: transparent !important;
+}
+
+.rstudio-themes-flat .gwt-DecoratorPanel,
+.rstudio-themes-flat .gwt-SimplePanel {
+  background-color: #1a1512 !important;
+}
+
+/* Catch all inline white backgrounds */
+.rstudio-themes-flat div[style*="background-color: white"],
+.rstudio-themes-flat div[style*="background-color: rgb(255, 255, 255)"],
+.rstudio-themes-flat div[style*="background: white"],
+div[style*="background-color: white"],
+div[style*="background: white"],
+div[style*="background-color:#FFFFFF"],
+div[style*="background-color:#ffffff"],
+div[style*="background-color: #FFFFFF"],
+div[style*="background-color: #ffffff"] {
+  background-color: #1a1512 !important;
+}
+
+/* All panels and containers */
+.gwt-SimplePanel,
+.gwt-DeckPanel,
+.gwt-StackPanel,
+.gwt-FlowPanel,
+.gwt-LayoutPanel {
+  background-color: transparent !important;
+}
+
+/* Combo boxes */
+.gwt-SuggestBoxPopup,
+.rstudio-themes-flat .gwt-SuggestBoxPopup {
+  background-color: #1a1512 !important;
+  border: 1px solid #8b2635 !important;
+}
+
+/* Fix white icons and images in environment/data panes - but NOT tab icons */
+.rstudio-themes-flat .environmentPanel .gwt-Image,
+.rstudio-themes-flat .environmentPanel img,
+.rstudio-themes-flat .dataTable img {
+  filter: brightness(0.8) !important;
+  background-color: transparent !important;
+}
+
+/* Object icons in environment */
+.rstudio-themes-flat .objectIcon,
+.rstudio-themes-flat .variableIcon {
+  background-color: transparent !important;
+  filter: invert(0.8) !important;
+}
+
+/* Make toolbar icons visible */
+.rstudio-themes-flat .rstheme_toolbarWrapper img,
+.rstudio-themes-flat button img:not(.gwt-TabLayoutPanelTab img),
+.rstudio-themes-flat .gwt-Button img:not(.gwt-TabLayoutPanelTab img) {
+  filter: brightness(1.2) saturate(0.5) !important;
+}
+
+/* Additional close button styling */
+.closeTabButton,
+.gwt-TabLayoutPanelTab img[src*="close"],
+img[title*="Close"] {
+  filter: brightness(0) saturate(100%) invert(68%) sepia(64%) saturate(445%) hue-rotate(359deg) brightness(104%) contrast(101%) !important;
+  opacity: 0.8 !important;
+  cursor: pointer !important;
+}
+
+.closeTabButton:hover,
+.gwt-TabLayoutPanelTab img[src*="close"]:hover {
+  filter: brightness(0) saturate(100%) invert(23%) sepia(89%) saturate(2384%) hue-rotate(344deg) brightness(89%) contrast(92%) !important;
+  opacity: 1 !important;
+}
+
+/* Remove white backgrounds from all UI elements */
+.rstudio-themes-flat * {
+  background-color: transparent;
+}
+
+.rstudio-themes-flat .windowframe,
+.rstudio-themes-flat .gwt-TabLayoutPanelContent,
+.rstudio-themes-flat .rstheme_center {
+  background-color: #1a1512 !important;
+}
+
+/* Fix white borders */
+.rstudio-themes-flat td,
+.rstudio-themes-flat th {
+  border-color: #2a1f1a !important;
+}
+
+/* Remove white borders from splitters and separators */
+.gwt-SplitLayoutPanel-HDragger,
+.gwt-SplitLayoutPanel-VDragger,
+.rstudio-themes-flat .gwt-SplitLayoutPanel-HDragger,
+.rstudio-themes-flat .gwt-SplitLayoutPanel-VDragger {
+  background-color: #0f0d0a !important;
+  border: none !important;
+}
+
+/* Panel borders */
+.rstudio-themes-flat .windowframe,
+.rstudio-themes-flat .gwt-TabLayoutPanelContent {
+  border: 1px solid #0f0d0a !important;
+}
+
+/* Remove all white borders */
+.rstudio-themes-flat * {
+  border-color: #2a1f1a !important;
+}
+
+/* Tab close buttons - make them visible */
+.gwt-TabLayoutPanelTab .closeTabButton,
+.rstudio-themes-flat .gwt-TabLayoutPanelTab .closeTabButton,
+.closeButton,
+.gwt-TabLayoutPanelTab img[src*="close"],
+button.closeButton {
+  filter: brightness(3) sepia(1) hue-rotate(-10deg) saturate(5) !important;
+  opacity: 0.8 !important;
+}
+
+.gwt-TabLayoutPanelTab .closeTabButton:hover,
+.closeButton:hover {
+  filter: brightness(4) sepia(1) hue-rotate(340deg) saturate(8) !important;
+  opacity: 1 !important;
+}
+
+/* Style for close icons in tabs */
+.rstudio-themes-flat .rstheme_tabCloseButton {
+  color: #d4af37 !important;
+  background-color: transparent !important;
+}
+
+.rstudio-themes-flat .rstheme_tabCloseButton:hover {
+  color: #ff6b6b !important;
+}
+
+/* Main editor colors */
+.ace_editor {
+  background-color: #1a1512;
+  color: #f5f5dc;
+}
+
+.ace_cursor {
+  color: #ffd700;
+}
+
+.ace_selection {
+  background-color: #a52a2a !important;
+  opacity: 0.6 !important;
+}
+
+.ace_marker-layer .ace_selection {
+  background-color: #a52a2a !important;
+}
+
+.ace_marker-layer .ace_active-line {
+  background-color: #2a1f1a !important;
+}
+
+.ace_marker-layer .ace_selected-word {
+  background-color: rgba(139, 38, 53, 0.5) !important;
+  border: 1px solid #dc143c !important;
+}
+
+/* Multiple selections */
+.ace_selection.ace_start {
+  background-color: #a52a2a !important;
+}
+
+/* Make sure all selection states are visible */
+.ace_scroller .ace_selection {
+  background-color: #a52a2a !important;
+}
+
+.ace_gutter {
+  background-color: #0f0d0a;
+  color: #d4af37;
+}
+
+.ace_gutter-active-line {
+  background-color: #1f1712;
+}
+
+/* Syntax highlighting */
+.ace_keyword {
+  color: #dc143c;
+  font-weight: bold;
+}
+
+.ace_constant.ace_language {
+  color: #ff6347;
+}
+
+.ace_constant.ace_numeric {
+  color: #ffa07a;
+}
+
+.ace_constant.ace_character {
+  color: #e8b86d;
+}
+
+.ace_string {
+  color: #90ee90;
+}
+
+.ace_comment {
+  color: #8fbc8f;
+  font-style: italic;
+}
+
+.ace_variable {
+  color: #f5f5dc;
+}
+
+.ace_variable.ace_language {
+  color: #ff4500;
+}
+
+.ace_entity.ace_name.ace_function {
+  color: #ffd700;
+}
+
+.ace_support.ace_function {
+  color: #daa520;
+}
+
+.ace_support.ace_class {
+  color: #cd853f;
+}
+
+.ace_storage {
+  color: #b22222;
+  font-weight: bold;
+}
+
+.ace_operator {
+  color: #cd5c5c;
+}
+
+.ace_identifier {
+  color: #f0e68c;
+}
+
+/* Brackets and parentheses */
+.ace_paren {
+  color: #d4af37;
+}
+
+/* Console colors */
+.ace_console_error {
+  background-color: #8b0000;
+}
+
+/* R Markdown specific */
+.ace_support.ace_function.ace_codebegin {
+  color: #228b22;
+}
+
+.ace_support.ace_function.ace_codeend {
+  color: #228b22;
+}
+
+.ace_constant.ace_language.ace_boolean {
+  color: #ff6b6b;
+}
+
+/* Matching bracket highlighting */
+.ace_bracket {
+  border: 1px solid #ffd700;
+  background-color: rgba(255, 215, 0, 0.1);
+}
+
+/* Find/replace highlight */
+.ace_selected-word {
+  border: 1px solid #2e8b57;
+  background-color: rgba(46, 139, 87, 0.2);
+}
+
+/* Additional UI elements */
+.ace_indent-guide {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAACCAYAAACZgbYnAAAAEklEQVQImWNgYGBgYHB3d/8PAAgOAnPnhxyiAAAAAElFTkSuQmCC) right repeat-y;
+}
+
+.ace_fold-widget {
+  color: #d4af37;
+}
+
+.ace_invisible {
+  color: #3a2f2a;
+}
